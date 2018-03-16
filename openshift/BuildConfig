@@ -1,7 +1,7 @@
 kind: "BuildConfig"
 apiVersion: "v1"
 metadata:
-  name: "test build"
+  name: "testbuild"
 spec:
   source: 
     type: "Git"
@@ -13,4 +13,4 @@ spec:
   output: 
     to:
       kind: "ImageStreamTag"
-      name: "hybris-base:latest"
+      name: "myapp:latest"
