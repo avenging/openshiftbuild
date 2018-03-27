@@ -7,6 +7,7 @@ RUN yum -y install unzip httpd; \
     ls -la; \
     unzip HYBRISCOMM6600P_0-70003031.ZIP; \
     ls -la; \
-    rm HYBRISCOMM6600P_0-70003031.ZIP
+    rm HYBRISCOMM6600P_0-70003031.ZIP; \
+    mkdir -p /run/httpd
 ENTRYPOINT ["/usr/sbin/httpd", "-DFOREGROUND"]
 
