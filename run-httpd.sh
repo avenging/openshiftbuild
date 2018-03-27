@@ -4,5 +4,7 @@
 # context after restarting the container.  httpd won't start correctly
 # if it thinks it is already running.
 rm -rf /run/httpd/* /tmp/httpd*
+mkdir -p /run/httpd
+mkdir -p /tmp/httpd
 
 exec /usr/sbin/apachectl -DFOREGROUND
